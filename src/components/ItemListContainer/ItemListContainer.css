@@ -6,3 +6,38 @@ h1{
     font-size: 40px;
     margin-top: 90px;
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.name{
+    font-size: 16px;
+    text-align: center;
+}
+
+.price{
+    font-size: 20px;
+    text-align: end;
+}
