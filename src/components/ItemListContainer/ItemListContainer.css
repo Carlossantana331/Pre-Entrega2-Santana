@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 h1{
-    font-family: "Dancing Script", cursive;
     text-align: center;
     font-size: 40px;
     margin-top: 90px;
@@ -40,4 +39,45 @@ h1{
 .price{
     font-size: 20px;
     text-align: end;
+}
+
+.itemDetail{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemDetailInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    height: 500px;
+}
+
+.itemDetailName{
+    font-size: 40px;
+}
+
+.itemDetailDescription{
+    font-size: 15px;
+}
+
+.itemDetailPrice{
+    font-size: 30px;
+}
+
+.itemDetailBtn{
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.itemDetailBtn:hover{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
 }

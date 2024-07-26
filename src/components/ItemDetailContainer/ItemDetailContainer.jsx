@@ -16,14 +16,20 @@ function ItemDetailContainer() {
   return (
 
 
-    <div>
-        <div className='card'>
-            <h2>{item.nombre}</h2>
-            <p>{item.descripcion}</p>
-            <h3>${item.precio}</h3>
+    <div className='itemDetail'>
+
+        <div>
+            <img className="itemDetailImg" src="/img/img-ref.png" alt={item.nombre} />
+        </div>
+        <div className="itemDetailInfo">
+            <h2 className="itemDetailName">{item.nombre}</h2>
+            <p className="itemDetailDescription">{item.descripcion}</p>
+            <h3 className="itemDetailPrice">${item.precio}</h3>
+
+            <button className="itemDetailBtn" onClick={() => navigate(-1)}>Regresar</button>
         </div>
 
-        <button onClick={() => navigate(-1)}>Regresar</button> {/* Botón para regresar */}
+        
     </div>
   )
 }
